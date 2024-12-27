@@ -1,0 +1,12 @@
+{%extends 'frontapp/main.html'%}
+{% load static %}
+{%block title%}
+form page
+{% endblock %}
+{%block content%}
+<form method="POST">
+     {{data.as_p}}
+     {%csrf_token%}
+     <input type="Submit" value="SUBMIT" >
+</form>
+{% endblock %}

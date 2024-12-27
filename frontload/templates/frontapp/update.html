@@ -1,0 +1,12 @@
+{%extends 'frontapp/main.html'%}
+{% load static %}
+{%block title%}
+product form page
+{% endblock %}
+{%block content%}
+<form method="POST" class="i1">
+     {{form.as_p}}
+     {%csrf_token%}
+     <input type="Submit">
+</form>
+{% endblock %}

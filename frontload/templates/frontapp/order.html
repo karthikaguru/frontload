@@ -1,0 +1,42 @@
+{%extends 'frontapp/main.html'%}
+{% loadstatic % }
+
+{%block title%}
+my order page
+{% endblock %}
+{%block content%}
+<table>
+    <thead>
+        <th>REFERENCES</th>
+        <th>ordernumber</th>
+        <th>price</th>
+        <th>quantity</th>
+        <th>gst</th>
+        <th>Bill amount</th>
+        <th>Update</th>
+        <th>Delete</th>
+        
+        
+    </thead>
+    <tbody>
+
+        {%for i in det%}
+            <tr>
+                 <td>{{i.preference}}</td>
+                 <td>{{i.ordernumber}}</td>   
+                 <td>{{i.price}}</td>  
+                 <td>{{i.quantity}}</td>  
+                 <td>{{i.gst}}</td>  
+                 <td>{{i.bill}}</td>  
+                 <td><a href="/frontapp/update/{{i.id}}"><button>Update</button></a></td>
+                  <td><a href="/frontapp/dele/{{i.id}}"><button>Delete</button></a></td>
+        </tr>
+        
+        {%endfor%}
+        <a href="/frontapp/oForm/"><button>ADD NEW DATA</button></a>
+       
+    </tbody>
+   
+</table>
+<p class="text-primary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti totam blanditiis amet eum soluta dolor cumque? Eum, illum unde dignissimos quo non, odio vel, aperiam suscipit qui facilis amet. Sed.</p>
+{%endblock%}

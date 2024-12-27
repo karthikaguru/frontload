@@ -1,0 +1,12 @@
+{%extends 'frontapp/main.html'%}
+{% load static % }
+{%block title%}
+Contact us
+{% endblock %}
+{%block content%}
+{%include 'frontapp/contact.html'%}
+<div id="name">
+    <h1 >{{name}}</h1>
+    <h1>{{email}}</h1>
+</div>
+{% endblock %}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    {%load static%}
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+   
+
+    <title>
+        {% block title %}
+        main page
+        {%endblock title%}
+    </title>
+    {% load bootstrap5 %}
+    {% bootstrap_css %}
+    {% bootstrap_javascript %}
+    
+    <link rel="stylesheet" href="{%static 'css/main.css' %}">
+</head>
+<body>
+    {%include 'frontapp/inc/slider.html'%}
+   
+    {%block content%}
+    <div class="i2">
+        <h1>Shopify</h1>
+        <img src="{%static 'images/image2.jpg'%}" alt="not loaded"height="300px" width="250px"/>
+    </div>
+   
+    {% endblock %}
+</body>
+</html>

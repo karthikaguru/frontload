@@ -1,0 +1,66 @@
+body{
+    background-color: rgb(164, 203, 180);
+    margin:1em;
+
+}
+table,th,td{
+    border: 2px solid black;
+    padding: 2px;
+    margin-left: 1px;
+    margin-top: 1px;
+    text-align: center;
+}
+.button{
+    margin-left: 1px;   
+}
+button:hover{
+    background-color: rgb(81, 223, 223);
+   
+}
+h1{
+   margin-left: 2px;
+   top: 0px;
+  
+   
+}
+.red{
+    margin-right: 0px;
+}
+.i2,h1{
+    margin: 1px;
+}
+.i2,img{
+    border-radius: 20%;
+    width: unset;
+}
+form{
+    margin:2px;
+    padding: 3px;
+    color:rgb(31, 172, 57);
+    border: unset;
+    background-color: rgb(0, 255, 110);
+}
+.mb-3{
+    color:red;
+}
+
+#username,#exampleInputPassword1{
+    width:20em;
+    border: 1px solid black;
+    
+}
+form,p{
+    color: red;
+}
+.i1{
+    margin-left: 12px;
+}
+button{
+    margin: 3px;
+}
+#name{
+    border: 1px solid black;
+    color: blue;
+    padding: 2px ;
+    margin-left: 1em;
+}

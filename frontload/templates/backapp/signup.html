@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  {%load static%}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login page</title>
+    <link rel="stylesheet" href="{%static 'css/main.css' %}">
+    {% load bootstrap5 %}
+    {% bootstrap_css %}
+    {% bootstrap_javascript %}
+</head>
+<body>
+    
+    <form method="POST">
+      <h1 class="xxx">SIGN UP PAGE</h1>
+      
+        <div class="mb-3">
+          <label for="username" class="form-label">Username</label>
+          <input type="text" class="form-control" id="username"  name="username">
+         
+        </div>
+        <p class="text-danger fw-bold">{{new_user}}</p>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Password</label>
+          <input type="password" class="form-control" id="exampleInputPassword1" name="password">
+        </div>
+        
+        <div class="mb-3">
+          <label for="firstname" class="form-label">First name</label>
+          <input type="text" class="form-control" id="exampleInputPassword1" name="first_name" required>
+        </div>
+        <div class="mb-3">
+          <label for="lastname" class="form-label">Last name</label>
+          <input type="text" class="form-control" id="exampleInputPassword1" name="last_name" required>
+        </div>
+        <div class="mb-3">
+          <label for="number" class="form-label">Age</label>
+          <input type="number" class="form-control" id="exampleInputPassword1" name="Age" required>
+        </div>
+     
+        <button type="submit" class="btn btn-primary">Submit</button>
+        {% csrf_token %}
+       
+      </form>
+</body>
+</html>
